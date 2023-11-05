@@ -7,15 +7,16 @@
 	<meta name="keywords" content="HTML, CSS, JavaScript, Computer Engineer" />
 	<meta name="author" content="Anthony Roumi" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link href="styles/main.css" rel="stylesheet" />
+	<link href="styles/header.css" rel="stylesheet" media="screen"/>
+	<link href="styles/main.css" rel="stylesheet" media="screen"/>
 	<!-- ^^ i presume this is the same as a style tag ^^ -->
 	<script>console.log("Hire me!");</script>
 
 	<title>Anthony Roumi</title>
 	<template>hidden</template>
 	</head>
-	<body>
-		<header>
+	<body>			
+		<header class="header">
 			<h1>
 				<a href="/index.html"> Anthony Roumi</a>
 			</h1>
@@ -31,98 +32,65 @@
 							<a href="/projects.html">Projects</a>
 						</li>
 						<li>
-							<a href="/contact_me.html">Contact Me</a>
+							<button id="headcontact"> Contact</button>
 						</li>
 					</ul>
 				</nav>
-				<pre>Some tunes while you browse (I won't actually include lol):</pre>
-				<audio controls loop>
-					<source src="/media/tunes.mp3" type="audio/mp3"/>
-				</audio>
-				<hr>
+				</header>
 				<div id="intro">
-					Hello, my name is Anthony Roumi. I am a third year
-						<br>
-						<h2><b> Computer Engineer</b></h2>
-						<br>
+					<section class="introinfo">
+						<p style="line-height: 2;">Hello, my name is Anthony Roumi. I am a third year</p>
+						
+						<p style="font-size:xx-large"><b> Computer Engineer</b></p>
+						
 						<em> at the University of California, San Diego</em>
 						<br>
-					<a href="/contact_me.html">Contact Me</a>
-					<img src="/images/profilepic.jpg" height="300" alt="Profile image">
-				</div>
-		</header>
-		<main>
-			<section id="about_container">
-				<h2>About Me</h2>
-				<p>I am 21 years old, from Los Angeles, California.
-					I am an eager computer science student, fascinated 
-					with AI’s transformative potential, seeking an internship
-					opportunity that allows me to learn, grow and contribute to
-					the team objectives and problem solving challenges. I am an effective communicator
-					with a collaborative nature. My pastime pleasures include outdoor adventures, working out, and surfing.
-				</p>
-			</section>
-			<h2>Skills</h2>
-			<table>
-				<caption>
-					<strong>Language Fluency</strong>
-				</caption>
-				<colgroup>
-					<col />
-					<col span="3" class="backend" />
-					<col span="1" class="frontend" />
-				</colgroup>
-				<tr>
-					<td></td>
-					<th scope="col">C++</th>
-					<th scope="col">Python</th>
-					<th scope="col">Java</th>
-					<th scope="col">HTML,CSS,JS</th>
-				</tr>
-				<tr>
-					<th scope="row">(1-10)</th>
-					<td>8</td>
-					<td>7</td>
-					<td>5</td>
-					<td>5</td>
-				</tr>
-				</table>
-			</main>
-			<footer>
-				<hr />
-				<h3>Experiment / unneeded tags</h3>
-				<span lang="ar">هذا الفصل رائع!</span>
-				<aside>I have no use for this tag. There is no content aside from the main bodies</aside>
-				<i>wavy</i>
-				<br>
-			<iframe src="https://unrivaled-strudel-1ccf9d.netlify.app/" title="Anthony's site"></iframe>
-			<ol>
-				<li>a</li>
-				<li>b</li>
-				<li>no need for ordered list in this site</li>
-			</ol>
-			<form>
-				<fieldset>
-					<label for="profession">Select your profession:</label>
-					<select id="profession">
-						<optgroup label="Software">
-							<option value="systems">Systems Testing</option>
-							<option value="softwarefront">Software Development ~ frontend</option>
-							<option value="softwareback">Software Development ~ Backend</option>
-						</optgroup>
-						<optgroup label="Hardware">
-							<option value="research">Research Design</option>
-							<option value="testing">Testing Computer Systems</option>
-						</optgroup>
-					</select>
-				</fieldset>
+						<button id="contact"> Contact</button>
+					</section>
 					
-			</form>
-			<svg width="100" height="100">
-				<rect height="100" width="100" stroke="black" stroke-width="25" fill="red" />
-			</svg>
-			<canvas id="testcanvas" width="50" height="100" style="border:5px solid rgb(249, 0, 0)"></canvas>
+					<img src="/images/profilepic.jpg" alt="Profile image">
+				</div>
+		<main>
+			<div class="aboutme">
+				<section class="about_container">
+					<h2>About Me</h2>
+					<p>I am 21 years old, from Los Angeles, California. 
+						As an eager computer science student, I am passionate about learning and fascinated 
+						with AI’s transformative potential. Currently seeking an internship
+						opportunity that allows me to learn, grow and contribute to
+						the team objectives and problem solving challenges. I am an effective communicator
+						with a collaborative nature. My pastime pleasures include outdoor adventures, working out, and surfing.
+					</p>
+				</section>
+				<section class="skills"> 
+					<h2>Skills</h2>
+					<table> 
+						<caption>
+							<strong>Language Fluency</strong>
+						</caption>
+						<colgroup>
+							<col />
+							<col span="3" class="backend" />
+							<col span="1" class="frontend" />
+						</colgroup>
+						<tr>
+							<td></td>
+							<th scope="col">C++</th>
+							<th scope="col">Python</th>
+							<th scope="col">Java</th>
+							<th scope="col">HTML,CSS,JS</th>
+						</tr>
+						<tr>
+							<th scope="row">(1-10)</th>
+							<td>8</td>
+							<td>7</td>
+							<td>5</td>
+							<td>5</td>
+						</tr>
+						</table>
+				</section>
+				</div>
 			
-			</footer>
+			</main>
 		</body>
 	</html>

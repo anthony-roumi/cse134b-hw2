@@ -7,13 +7,14 @@
 	<meta name="keywords" content="HTML, CSS, JavaScript, Computer Engineer" />
 	<meta name="author" content="Anthony Roumi" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link href="styles/main.css" rel="stylesheet" />
+	<link href="styles/header.css" rel="stylesheet" media="screen"/>
+	<link href="styles/contact.css" rel="stylesheet" media="screen"/>
 	<!-- ^^ i presume this is the same as a style tag ^^ -->
 
 	<title>Anthony Roumi</title>
 	</head>
 	<body>
-		<header>
+		<header class="header">
 			<h1>
 				<a href="/index.html"> Anthony Roumi</a>
 			</h1>
@@ -29,46 +30,28 @@
 							<a href="/projects.html">Projects</a>
 						</li>
 						<li class="current">
-							<a href="/contact_me.html">Contact Me</a>
+							<button id="headcontact"> Contact</button>
 						</li>
 					</ul>
 				</nav>
-				<hr>
 		</header>
 		<main>
       <h1> Contact Me</h1>
-			<picture>
-				<source type="image/avif" srcset="images/profilepic.avif">
-				<source type="image/webp" srcset="images/profilepic.webp">
-				<img src="/images/profilepic.jpg" height="300" alt="Profile image">
-			</picture>
-      <fieldset id="contact_info">
-        <ul>
-          <li>Email: aroumi@ucsd.edu</li>
-          <li>Phone Number: (909) 329-0434 </li>
-          <li><a href="https://www.linkedin.com/in/anthony-roumi-6b647123b/">Linkedin</a></li>
-          <li><a href="https://www.instagram.com/anthony.roumi/"> Instagram</a></li>        
-        </ul>
-			</fieldset>
-			</main>
-			<form>
+			<div class="contactme">
+				<picture>
+					<source type="image/avif" srcset="images/profilepic.avif">
+					<source type="image/webp" srcset="images/profilepic.webp">
+					<img src="/images/profilepic.jpg" height="300" alt="Profile image">
+				</picture>
 				<fieldset>
-					<legend><strong>Connect with me!</strong></legend>
-					<label for="location">Where are you located:</label>
-					<datalist id="locations">
-						<option value="San Diego"></option>
-						<option value="Los Angeles"></option>
-						<option value="San Bernadino"></option>
-					</datalist>
-					<input list="locations" id="location" />
-					<br />
-
-					<br />
-					<label for="message">Send me a message!</label>
-					<textarea id="message">Your message here...</textarea>
-					<br />
-					<button type="submit">Send!</button>
+					<p style="text-align:center;">(909) 329-0434</p>
+					<br>
+						<a href="mailto:aroumi@ucsd.edu"><img height="50" src="/images/mailicon.jpeg" alt="mail icon"></a>
+						<a href="https://www.instagram.com/anthony.roumi/"><img height="50" src="/images/instaicon.png" alt="instagram icon"></a>
+						<a href="https://www.linkedin.com/in/anthony-roumi-6b647123b/"><img height="50" src="/images/linkedinicon.png" alt="linkedin icon"></a>
 				</fieldset>
-			</form>
+			</div>
+			
+			</main>
 		</body>
 	</html>

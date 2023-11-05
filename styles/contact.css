@@ -1,0 +1,30 @@
+main {
+  display: flex;
+  flex-direction: column;
+
+}
+
+main h1 {
+  display: flex;
+  font-size: xx-large;
+  align-self:center;
+  margin-top: 2em;
+}
+
+.contactme {
+  display: flex;
+  justify-content:space-evenly;
+  margin-top:2em;
+}
+
+main picture {
+  background-color: #FFC49B; 
+  padding: 2em;
+}
+
+fieldset{
+  background-color: #FFC49B;
+  border: none;
+  align-self: center;
+  padding: 2em;
+}

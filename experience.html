@@ -7,13 +7,15 @@
 	<meta name="keywords" content="HTML, CSS, JavaScript, Computer Engineer" />
 	<meta name="author" content="Anthony Roumi" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link href="styles/main.css" rel="stylesheet" />
+	<link href="styles/header.css" rel="stylesheet" media="screen"/>
+	<link href="styles/experience.css" rel="stylesheet" media="screen"/>
+
 	<!-- ^^ i presume this is the same as a style tag ^^ -->
 
 	<title>Anthony Roumi</title>
 	</head>
 	<body>
-		<header>
+		<header class="header">
 			<h1>
 				<a href="/index.html"> Anthony Roumi</a>
 			</h1>
@@ -29,35 +31,34 @@
 							<a href="/projects.html">Projects</a>
 						</li>
 						<li>
-							<a href="/contact_me.html">Contact Me</a>
+							<button id="headcontact"> Contact</button>
 						</li>
 					</ul>
 				</nav>
-				<hr>
 		</header>
 		<main>
-      <h1> Experience</h1>
-			<section id="about_container">
+			<section class="experience_container">
+				<h1> Experience</h1>
 				
-          <h3>Popup Pops (summer business startup)</h3>
-          <p>I partnered up with friends to build and launch an organic popsicle company. We built the brand from zero, firstly developing each unique flavor.  We secured a commercial manufacturing facility, permits, and licensing. We sourced raw materials and packaging. I oversaw operational details and the popsicle manufacturing process. I also designed appealing social media posts using Photoshop. We recruited a team of enthusiastic individuals to help with sales and distribution on busy beaches, farmers markets, and parks. We streamlined the entire process and enhanced the product based on customer and team feedback. Ultimately, in a short 3 months, we achieved $10,000 in sales.</p>
+          <p><b>Pop up Pops (summer business startup)</b> <br> I partnered up with friends to build and launch an organic popsicle company. We built the brand from zero, firstly developing each unique flavor.  We secured a commercial manufacturing facility, permits, and licensing. We sourced raw materials and packaging. I oversaw operational details and the popsicle manufacturing process. I also designed appealing social media posts using Photoshop. We recruited a team of enthusiastic individuals to help with sales and distribution on busy beaches, farmers markets, and parks. We streamlined the entire process and enhanced the product based on customer and team feedback. Ultimately, in a short 3 months, we achieved $10,000 in sales.</p>
           <details>
 						<summary>Pictures and Videos</summary>
 						<figure>
+							<br>
 							<img src="/images/popup/coco.png" height="200" alt="Coconut">
 							<img src="/images/popup/straw.png" height="200" alt="Strawberry">
 							<img src="/images/popup/lemon.png" height="200" alt="Lemon">
 							<img src="/images/popup/pineapple.png" height="200" alt="Pineapple_Orange">
-							<figcaption><i>Flavor profiles of our four unique flavors</i></figcaption>
+							<figcaption>Flavor profiles of our four unique flavors</figcaption>
 						</figure>
+						<br>
 						<figure>
-							<video controls height="200">
+							<video controls height="350">
 								<source src="/media/strawnanaFINALlogo.MP4" type="video/mp4" />
 							</video>	
-							<figcaption><i>Stop motion video I created using 2 images and photoshop</i></figcaption>
-						</figure>				
+							<figcaption>Stop motion video I created using 2 images and photoshop:</figcaption>			
+						</figure>	
 					</details>
-					<hr>
 			</section>
 			</main>
 		</body>

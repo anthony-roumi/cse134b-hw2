@@ -1,0 +1,35 @@
+.experience_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience_container h1 {
+  margin-top: 2em;
+  margin-bottom:1em;
+  font-size: xx-large;
+  align-self: center;
+}
+
+.experience_container p {
+  background-color: white;
+  color:rgb(0, 0, 0);
+  align-self:center;
+  font-size: large;
+  padding: 2em;
+  margin: 0 2em;
+  border-top: black solid 1px;
+  border-right: black solid 1px;
+  border-left: black solid 1px;
+  line-height: 2;
+}
+
+.experience_container details {
+  background-color: white;
+  font-size: large;
+  padding: 2em;
+  margin:0 2em;
+  
+  border-right: black solid 1px;
+  border-left: black solid 1px;
+  border-bottom: black solid 1px;
+}

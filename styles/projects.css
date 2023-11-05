@@ -1,0 +1,24 @@
+
+.project_container {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.project_container h1{
+  align-self: center;
+  font-size: xx-large;
+  margin-top: 2em;
+}
+
+
+.project_container p {
+  background-color: #5e5e5e57;
+  color:rgb(0, 0, 0);
+  align-self:center;
+  font-size: large;
+  padding: 2em;
+  margin: 0 2em;
+  border: solid black 1px;
+  margin-top: 2em;
+}

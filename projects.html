@@ -7,13 +7,14 @@
 	<meta name="keywords" content="HTML, CSS, JavaScript, Computer Engineer" />
 	<meta name="author" content="Anthony Roumi" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link href="styles/main.css" rel="stylesheet" />
+	<link href="styles/header.css" rel="stylesheet" media="screen" />
+	<link href="styles/projects.css" rel="stylesheet" media="screen"/>
 	<!-- ^^ i presume this is the same as a style tag ^^ -->
 
 	<title>Anthony Roumi</title>
 	</head>
 	<body>
-		<header>
+		<header class="header">
 			<h1>
 				<a href="/index.html"> Anthony Roumi</a>
 			</h1>
@@ -29,20 +30,17 @@
 							<a href="/projects.html">Projects</a>
 						</li>
 						<li>
-							<a href="/contact_me.html">Contact Me</a>
+							<button id="headcontact"> Contact</button>
 						</li>
 					</ul>
 				</nav>
-				<hr>
 		</header>
 		<main>
-      <h1> Projects</h1>
-			<section id="project_container">
-       <h3>Graphs</h3>
-				<p>I developed a class in C++ to construct a graph from a specifically formatted CSV file. I implemented and designed graph algorithms, such as <code>BFS()</code>, <code>DFS()</code>, <code>Dijksta's()</code> for finding the shortest path, and connected components to perform various tasks.</p>
-				<hr>
-				<h3>Huffman Encoding</h3>
-				<p>I implemented a tool to compress and uncompress files using Huffman Coding. Inputting an arbitrary file, I used huffman compression to create a compressed version of the file and the same algorithm reversed to uncompress the file.</p>
+			<section class="project_container">
+			<h1> Projects</h1>
+       
+				<p><b>Graphs</b> <br>I developed a class in C++ to construct a graph from a specifically formatted CSV file. I implemented and designed graph algorithms, such as <code>BFS()</code>, <code>DFS()</code>, <code>Dijksta's()</code> for finding the shortest path, and connected components to perform various tasks.</p>
+				<p><b>Huffman Encoding</b> <br>I implemented a tool to compress and uncompress files using Huffman Coding. Inputting an arbitrary file, I used huffman compression to create a compressed version of the file and the same algorithm reversed to uncompress the file.</p>
 			</section>
 			</main>
 		</body>
