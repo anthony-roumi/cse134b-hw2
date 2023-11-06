@@ -22,8 +22,7 @@ body {
 .header h1>a {
   margin-left:.5em;
   text-decoration: none;
-  color:black; 
-  font-weight:condensed; 
+  color:black;  
 }
 
 #navigation_bar{
@@ -48,7 +47,7 @@ ul li,a {
   color:rgb(152, 152, 152);
 }
 
-a img {
+a:has(img) {
   display:flex;
 }
 

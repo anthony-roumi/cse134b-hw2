@@ -13,7 +13,7 @@ body {
 .header {
   background-color: var(--offwhite);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items:center;
   border-bottom:solid black 0.75px;
   height: 4em;
@@ -25,6 +25,7 @@ body {
 
 #navigation_bar{
   justify-content: center;
+  margin-left:4em;
 }
 
 nav ul {
@@ -44,6 +45,21 @@ ul li,a {
   color:rgb(152, 152, 152);
 }
 
+
+.introinfo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size:large;
+  width:100em;
+}
+
+
+
+
+
+
+
 a img {
   display:flex;
 }
@@ -60,9 +76,7 @@ table {
   display:none;
 }
 
-.introinfo p {
-  font-size: small !important;
-}
+
 
 
 
