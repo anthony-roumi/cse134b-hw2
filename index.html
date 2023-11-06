@@ -7,9 +7,10 @@
 	<meta name="keywords" content="HTML, CSS, JavaScript, Computer Engineer" />
 	<meta name="author" content="Anthony Roumi" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link href="styles/header.css" rel="stylesheet" media="screen"/>
+	<link rel="stylesheet" media="screen and (min-width: 850px)" href="styles/header.css"/>
+	<link rel="stylesheet" media="screen and (max-width: 850px)" href="styles/headersmall.css"/>
+	<link rel="stylesheet" media="screen and (max-width: 530px)" href="styles/headersmallest.css"/>
 	<link href="styles/main.css" rel="stylesheet" media="screen"/>
-	<!-- ^^ i presume this is the same as a style tag ^^ -->
 	<script>console.log("Hire me!");</script>
 
 	<title>Anthony Roumi</title>
@@ -32,7 +33,13 @@
 							<a href="/projects.html">Projects</a>
 						</li>
 						<li>
-							<button id="headcontact"> Contact</button>
+							<a href="/contact_me.html">Contact</a>
+						</li>
+						<li>
+							<a href="mailto:aroumi@ucsd.edu"><img height="40" src="/images/contacticons/mailicon.png" alt="mail icon"></a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/in/anthony-roumi-6b647123b/"><img height="30" src="/images/contacticons/linkedinicon.png" alt="linkedin icon"></a>
 						</li>
 					</ul>
 				</nav>
@@ -41,7 +48,7 @@
 					<section class="introinfo">
 						<p style="line-height: 2;">Hello, my name is Anthony Roumi. I am a third year</p>
 						
-						<p style="font-size:xx-large"><b> Computer Engineer</b></p>
+						<p style="font-size:xx-large; font-family:europabold;"><b> Computer Engineer</b></p>
 						
 						<em> at the University of California, San Diego</em>
 						<br>
@@ -49,6 +56,46 @@
 					</section>
 					
 					<img src="/images/profilepic.jpg" alt="Profile image">
+
+					<table>
+						<tr>
+							<th></th>
+							<th style="font-family:europabold">Language Fluency</th>
+						</tr>
+						<tr>
+							<td>C++</td>
+							<td>
+								<svg>
+									<rect style="width:80%; height:100%"/>
+								</svg>
+							</td>
+						</tr>
+						<tr>
+							<td>Python</td>
+							<td>
+								<svg>
+									<rect style="width:45%; height:100%"/>
+								</svg>
+							</td>
+						</tr>
+						<tr>
+							<td>Java</td>
+							<td>
+								<svg>
+									<rect style="width:35%; height:100%"/>
+								</svg>
+							</td>
+						</tr>
+						<tr>
+							<td>Html,Css,Js</td>
+							<td>
+								<svg>
+									<rect style="width:60%; height:100%"/>
+								</svg>
+							</td>
+						</tr>
+					</table>
+				
 				</div>
 		<main>
 			<div class="aboutme">
@@ -62,35 +109,12 @@
 						with a collaborative nature. My pastime pleasures include outdoor adventures, working out, and surfing.
 					</p>
 				</section>
-				<section class="skills"> 
-					<h2>Skills</h2>
-					<table> 
-						<caption>
-							<strong>Language Fluency</strong>
-						</caption>
-						<colgroup>
-							<col />
-							<col span="3" class="backend" />
-							<col span="1" class="frontend" />
-						</colgroup>
-						<tr>
-							<td></td>
-							<th scope="col">C++</th>
-							<th scope="col">Python</th>
-							<th scope="col">Java</th>
-							<th scope="col">HTML,CSS,JS</th>
-						</tr>
-						<tr>
-							<th scope="row">(1-10)</th>
-							<td>8</td>
-							<td>7</td>
-							<td>5</td>
-							<td>5</td>
-						</tr>
-						</table>
-				</section>
 				</div>
 			
 			</main>
+			<footer>
+				<h3 style="font-family:europabold">Anthony Roumi</h3>
+				<a href="mailto:aroumi@ucsd.edu"> <p style="font-family:europathin">aroumi@ucsd.edu</p></a>
+			</footer>
 		</body>
 	</html>

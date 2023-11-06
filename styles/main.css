@@ -1,24 +1,29 @@
 @import url(vars.css);
 
+
+
 #intro {
   margin-top: 2em;
   margin-left: 3em;
   display: flex;
-  background-color: white;
+  background-color: var(--offwhite);
   border-radius: 3px;
   height: 25em;
   align-items: center;
-  justify-content:space-around;
-  border: black solid .5px;
+  gap:6em;
+  
 }
+
 
 .introinfo {
   position: relative;
   display: flex;
   flex-direction: column;
-  font-size:xx-large; 
-}
+  font-size:large;
+  margin-left: 4em;
 
+  width:100em;
+}
 
 .introinfo em{
   position: relative;
@@ -44,26 +49,45 @@
 }
 
 #intro img {
-  height: 23em;
-  border-radius: 2em;
-  object-fit:contain;  
+  height: 40vh;
+  border-radius: 10em;
+  object-fit:contain; 
 }
 
 .aboutme {
   display: flex;
-  /* justify-content:space-evenly; */
+
 }
 
-.skills {
-  display: flex;
-  flex-direction: column;
+
+table {
+ height: 35%;
+  
+  
+  width: 50%;
+  text-align: left;
 }
 
-.skills h2 {
-  font-size: xx-large;
-  align-self: center;
-  margin-top: 3em;
+
+
+th, td {
+  vertical-align: middle;
 }
+
+svg {
+  display: block; 
+  height: 20px; 
+}
+
+rect {
+  width: 100%;
+  height: 100%; 
+  fill: var(--background-color);
+}
+
+
+
+
 
 .about_container {
   display: flex;
@@ -77,7 +101,7 @@
   align-self: center;
 }
 .about_container p {
-  background-color: #5e5e5e57;
+  background-color: var(--offwhite);
   color:rgb(0, 0, 0);
   align-self:center;
   font-size: large;

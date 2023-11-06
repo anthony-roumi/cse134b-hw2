@@ -20,22 +20,18 @@ body {
 }
 
 .header h1>a {
-  margin-left:.5em;
-  text-decoration: none;
-  color:black; 
-  font-weight:condensed; 
+  display:none; 
 }
 
 #navigation_bar{
-  justify-content: flex-end;
-  margin-right: 1em;
+  justify-content: center;
 }
 
 nav ul {
   display: flex;
   align-items: center;
   gap: 2em;
-  font-size: large; 
+  font-size: small; 
 }
 
 .current>a {
@@ -51,6 +47,23 @@ ul li,a {
 a img {
   display:flex;
 }
+
+table {
+  display:none;
+}
+
+#navigation_bar img{
+  display: none;
+}
+
+#intro img {
+  display:none;
+}
+
+.introinfo p {
+  font-size: small !important;
+}
+
 
 
 footer {

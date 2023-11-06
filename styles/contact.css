@@ -9,22 +9,14 @@ main h1 {
   font-size: xx-large;
   align-self:center;
   margin-top: 2em;
+  color:white;
 }
 
-.contactme {
-  display: flex;
-  justify-content:space-evenly;
+form {
   margin-top:2em;
+  color:white;
+  align-items:center;
+  justify-self:center;
+  text-align:center;
 }
 
-main picture {
-  background-color: #FFC49B; 
-  padding: 2em;
-}
-
-fieldset{
-  background-color: #FFC49B;
-  border: none;
-  align-self: center;
-  padding: 2em;
-}

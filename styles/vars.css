@@ -1,3 +1,21 @@
 :root {
-  --background-color: #BDE3FF;
+  --background-color: #358ccb;
+  --main-font: europa;
+  --main-fontBold : europaBold;
+  --offwhite : #FAF9F6;
+}
+
+@font-face {
+  font-family: europa;
+  src:url(/fonts/europanuova-cufonfonts/EuropaNuovaRegular.ttf);
+}
+
+@font-face {
+  font-family: europabold;
+  src:url(/fonts/europanuova-cufonfonts/EuropaNuovaBold.ttf);
+}
+
+@font-face {
+  font-family: europathin;
+  src:url(/fonts/europanuova-cufonfonts/EuropaNuovaItalic.ttf);
 }

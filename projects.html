@@ -7,10 +7,9 @@
 	<meta name="keywords" content="HTML, CSS, JavaScript, Computer Engineer" />
 	<meta name="author" content="Anthony Roumi" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link href="styles/header.css" rel="stylesheet" media="screen" />
+	<link rel="stylesheet" media="screen and (min-width: 850px)" href="styles/header.css"/>
+	<link rel="stylesheet" media="screen and (max-width: 850px)" href="styles/headersmall.css"/>
 	<link href="styles/projects.css" rel="stylesheet" media="screen"/>
-	<!-- ^^ i presume this is the same as a style tag ^^ -->
-
 	<title>Anthony Roumi</title>
 	</head>
 	<body>
@@ -30,7 +29,13 @@
 							<a href="/projects.html">Projects</a>
 						</li>
 						<li>
-							<button id="headcontact"> Contact</button>
+							<a href="/contact_me.html">Contact</a>
+						</li>
+						<li>
+							<a href="mailto:aroumi@ucsd.edu"><img height="40" src="/images/contacticons/mailicon.png" alt="mail icon"></a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/in/anthony-roumi-6b647123b/"><img height="30" src="/images/contacticons/linkedinicon.png" alt="linkedin icon"></a>
 						</li>
 					</ul>
 				</nav>
@@ -39,9 +44,15 @@
 			<section class="project_container">
 			<h1> Projects</h1>
        
-				<p><b>Graphs</b> <br>I developed a class in C++ to construct a graph from a specifically formatted CSV file. I implemented and designed graph algorithms, such as <code>BFS()</code>, <code>DFS()</code>, <code>Dijksta's()</code> for finding the shortest path, and connected components to perform various tasks.</p>
-				<p><b>Huffman Encoding</b> <br>I implemented a tool to compress and uncompress files using Huffman Coding. Inputting an arbitrary file, I used huffman compression to create a compressed version of the file and the same algorithm reversed to uncompress the file.</p>
+				<p><b style="font-family:europabold,sans-serif,sans">Graphs</b> <br>I developed a class in C++ to construct a graph from a specifically formatted CSV file. I implemented and designed graph algorithms, such as <code>BFS()</code>, <code>DFS()</code>, <code>Dijksta's()</code> for finding the shortest path, and connected components to perform various tasks.</p>
+				<p><b style="font-family:europabold, sans-serif,sans">Huffman Encoding</b> <br>I implemented a tool to compress and uncompress files using Huffman Coding. Inputting an arbitrary file, I used huffman compression to create a compressed version of the file and the same algorithm reversed to uncompress the file.</p>
 			</section>
 			</main>
+			<br>
+			<br>
+			<footer>
+				<h3 style="font-family:europabold">Anthony Roumi</h3>
+				<a href="mailto:aroumi@ucsd.edu"> <p style="font-family:europathin">aroumi@ucsd.edu</p></a>
+			</footer>
 		</body>
 	</html>

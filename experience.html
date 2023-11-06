@@ -7,10 +7,9 @@
 	<meta name="keywords" content="HTML, CSS, JavaScript, Computer Engineer" />
 	<meta name="author" content="Anthony Roumi" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link href="styles/header.css" rel="stylesheet" media="screen"/>
+	<link rel="stylesheet" media="screen and (min-width: 850px)" href="styles/header.css"/>
+	<link rel="stylesheet" media="screen and (max-width: 850px)" href="styles/headersmall.css"/>
 	<link href="styles/experience.css" rel="stylesheet" media="screen"/>
-
-	<!-- ^^ i presume this is the same as a style tag ^^ -->
 
 	<title>Anthony Roumi</title>
 	</head>
@@ -31,7 +30,13 @@
 							<a href="/projects.html">Projects</a>
 						</li>
 						<li>
-							<button id="headcontact"> Contact</button>
+							<a href="/contact_me.html">Contact</a>
+						</li>
+						<li>
+							<a href="mailto:aroumi@ucsd.edu"><img height="40" src="/images/contacticons/mailicon.png" alt="mail icon"></a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/in/anthony-roumi-6b647123b/"><img height="30" src="/images/contacticons/linkedinicon.png" alt="linkedin icon"></a>
 						</li>
 					</ul>
 				</nav>
@@ -40,7 +45,7 @@
 			<section class="experience_container">
 				<h1> Experience</h1>
 				
-          <p><b>Pop up Pops (summer business startup)</b> <br> I partnered up with friends to build and launch an organic popsicle company. We built the brand from zero, firstly developing each unique flavor.  We secured a commercial manufacturing facility, permits, and licensing. We sourced raw materials and packaging. I oversaw operational details and the popsicle manufacturing process. I also designed appealing social media posts using Photoshop. We recruited a team of enthusiastic individuals to help with sales and distribution on busy beaches, farmers markets, and parks. We streamlined the entire process and enhanced the product based on customer and team feedback. Ultimately, in a short 3 months, we achieved $10,000 in sales.</p>
+          <p><b style="font-family:europabold,sans-serif,sans">Pop up Pops (summer business startup)</b> <br> I partnered up with friends to build and launch an organic popsicle company. We built the brand from zero, firstly developing each unique flavor.  We secured a commercial manufacturing facility, permits, and licensing. We sourced raw materials and packaging. I oversaw operational details and the popsicle manufacturing process. I also designed appealing social media posts using Photoshop. We recruited a team of enthusiastic individuals to help with sales and distribution on busy beaches, farmers markets, and parks. We streamlined the entire process and enhanced the product based on customer and team feedback. Ultimately, in a short 3 months, we achieved $10,000 in sales.</p>
           <details>
 						<summary>Pictures and Videos</summary>
 						<figure>
@@ -61,5 +66,9 @@
 					</details>
 			</section>
 			</main>
+			<footer>
+				<h3 style="font-family:europabold">Anthony Roumi</h3>
+				<a href="mailto:aroumi@ucsd.edu"> <p style="font-family:europathin">aroumi@ucsd.edu</p></a>
+			</footer>
 		</body>
 	</html>
