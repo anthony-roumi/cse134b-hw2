@@ -38,7 +38,7 @@ ul {
   margin-right: 1em;
 }
 
-nav ul button {
+.dropbtn {
   display: none;
 }
 
@@ -53,7 +53,7 @@ ul li,a {
   color:rgb(152, 152, 152);
 }
 
-a:has(img) {
+a:has(+img) {
   display:flex;
 }
 

@@ -30,27 +30,27 @@ body {
 
 
 .navigation_bar {
-  justify-content: flex-end;
   margin-right: 1em;
   overflow: hidden;
   background-color: var(--background-color);
   font-family: var(--main-font);
+  z-index: 1;
+  
 }
 
 
 .navigation_bar a {
   font-size: 1em;
   text-align:center;
-  padding: 1em 1em;
+  padding: 1em 2em;
   text-decoration: none;
 }
 
 .dropdown {
-  float:left;
   overflow:hidden;
 }
 
-.dropdown .dropbtn {
+.dropbtn {
   border: none;
   outline: none;
   color: white;
@@ -61,15 +61,16 @@ body {
 }
 
 .navigation_bar li a:hover, .dropdown:hover .dropbtn {
-  background-color: white(255, 255, 255);
+  background-color: white;
+  
 }
 
 ul li {
   display: none;
-  position:relative;
   background-color: #f9f9f9;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+
+  
 }
 
 ul li a {
@@ -77,11 +78,11 @@ ul li a {
   padding: 12em 16em;
   text-decoration: none;
   display: block;
-  text-align: left;
 }
 
 ul li a a:hover {
   background-color: #ddd;
+  align-self:flex-end;
 }
 
 ul li a:hover {
@@ -94,8 +95,9 @@ ul li a:hover {
 
 
 .navigation_bar:hover ul{
-  margin-top:320%;
+  margin-top:250%;
 }
+
 
 footer {
   display:flex;
