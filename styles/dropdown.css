@@ -20,6 +20,8 @@ body {
 }
 
 .header h1>a {
+  font-size: x-large;
+  justify-self:center;
   margin-left:.5em;
   text-decoration: none;
   color:black;  
@@ -91,7 +93,7 @@ ul li a:hover {
 }
 
 
-.navigation_bar:hover .dropmenu {
+.navigation_bar:hover ul{
   margin-top:320%;
 }
 
