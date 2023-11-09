@@ -1,11 +1,13 @@
 main {
-  display: flex;
+  display: block;
   flex-direction: column;
 
 }
 
 main h1 {
-  display: flex;
+  /* display: flex; */
+  text-align:center;
+ 
   font-size: xx-large;
   align-self:center;
   margin-top: 2em;
@@ -13,10 +15,13 @@ main h1 {
 }
 
 form {
+  display:flex;
+  flex-direction:column;
+  text-align:center;
   margin-top:2em;
   color:white;
   align-items:center;
-  justify-self:center;
-  text-align:center;
+  justify-self:center; 
+  /* /* text-align:center; */
 }
 
