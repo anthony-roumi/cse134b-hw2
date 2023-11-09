@@ -9,18 +9,15 @@
   background-color: var(--offwhite);
   border-radius: 3px;
   height: 25em;
-  align-items: center;  
 }
 
 
 .introinfo {
-  position: relative;
   display: flex;
   flex-direction: column;
   font-size:large;
-  margin-left: 4em;
-
-  width:100em;
+  align-self:center;
+  width:100vw;
 }
 
 .introinfo b {
@@ -54,9 +51,9 @@
 }
 
 #intro img {
-  position: inherit;
+  position:relative;
   align-self:center;
-  justify-self:center;
+  margin-right:2em;
   order:-1;
   height: 40vh;
   border-radius: 10em;
@@ -73,9 +70,8 @@
 
 table {
   align-self:center;
-  height: 35%;
-  width: 50%;
   text-align: left;
+  margin-right:2em;
 }
 
 
@@ -86,7 +82,7 @@ th, td {
 
 svg {
   display: block; 
-  height: 20px; 
+  height: 5vh; 
 }
 
 rect {
@@ -94,7 +90,6 @@ rect {
   height: 100%; 
   fill: var(--background-color);
 }
-
 
 
 .about_container {
