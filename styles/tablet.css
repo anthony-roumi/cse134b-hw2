@@ -54,7 +54,8 @@
 
 #intro img {
   height: 40vh;
-  border-radius: 10em;
+  width:40vw;
+  /* border-radius: 10em; */
   object-fit:contain;
   order:-1;
   margin-left:3em; 
