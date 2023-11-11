@@ -46,7 +46,7 @@ ul:last-child li img {
 .navigation_bar a {
   font-size: 1em;
   text-align:center;
-  padding:1em .5em;
+  padding:1em 2.6em;
   text-decoration: none;
 }
 
@@ -58,7 +58,7 @@ ul:last-child li img {
   border: none;
   outline: none;
   color: white;
-  padding: 1em 2em;
+  padding: 1em 5em;
   background-color: var(--background-color);
   font-family: var(--main-font); 
 }
@@ -95,9 +95,7 @@ ul li a:hover {
 
 .navigation_bar:hover ul {
   position:absolute;
-  margin-right:5em;
 }
-
 
 footer {
   display:flex;
