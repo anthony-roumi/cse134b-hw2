@@ -74,7 +74,7 @@ table {
 }
 
 .about_container h2 {
-  color:white;
+  color: white;
   margin-top: 2em;
   margin-bottom:1em;
   font-size: 4vw;
@@ -105,7 +105,7 @@ table {
 }
 
 .experience_container p {
-  background-color: white;
+  background-color: var(--offwhite);
   color:rgb(0, 0, 0);
   align-self:center;
   font-size: 2vw;
@@ -118,7 +118,7 @@ table {
 }
 
 .experience_container details {
-  background-color: white;
+  background-color: var(--offwhite);
   font-size: 2vw;
   padding: 2em;
   margin:0 2em;
@@ -152,7 +152,7 @@ details video {
 
 
 .project_container p {
-  background-color: white;
+  background-color: var(--offwhite);
   color:rgb(0, 0, 0);
   align-self:center;
   font-size: 2vw;

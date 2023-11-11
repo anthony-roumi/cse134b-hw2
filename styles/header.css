@@ -69,7 +69,7 @@ footer {
   flex-direction:column;
   gap:2em;
   align-items:center;
-  background-color:white;
+  background-color: var(--offwhite);
   padding:2em;
   margin-top:5em;
 }

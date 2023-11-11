@@ -72,6 +72,7 @@ ul li {
   display: none;
   background-color: #f9f9f9;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  margin-right: 2em;
 }
 
 ul li a {
@@ -102,7 +103,7 @@ footer {
   flex-direction:column;
   gap:2em;
   align-items:center;
-  background-color:white;
+  background-color: var(--offwhite);
   padding:2em;
   margin-top:5em;
 }
