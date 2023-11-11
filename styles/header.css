@@ -16,7 +16,7 @@ body {
   justify-content: space-between;
   align-items:center;
   border-bottom:solid black 0.75px;
-  height: 4em;
+  height: 5em;
 }
 
 .header h1>a {

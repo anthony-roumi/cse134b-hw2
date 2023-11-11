@@ -46,7 +46,7 @@ ul:last-child li img {
 .navigation_bar a {
   font-size: 1em;
   text-align:center;
-  padding:1em 0.5em;
+  padding:1em .5em;
   text-decoration: none;
 }
 
@@ -64,9 +64,9 @@ ul:last-child li img {
 }
 
 .navigation_bar li a:hover, .dropdown:hover .dropbtn {
-  background-color: white;
-  
+  background-color: white;  
 }
+
 
 ul li {
   display: none;
@@ -80,10 +80,6 @@ ul li a {
   display: block;
 }
 
-ul li:nth-child(1) {
-  margin-top:310%;
-}
-
 ul li a a:hover {
   background-color: #ddd;
   align-self:flex-end;
@@ -95,6 +91,11 @@ ul li a:hover {
 
 .navigation_bar:hover ul li {
   display: block;
+}
+
+.navigation_bar:hover ul {
+  position:absolute;
+  margin-right:5em;
 }
 
 
