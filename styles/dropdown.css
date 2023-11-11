@@ -59,20 +59,19 @@ ul:last-child li img {
   outline: none;
   color: white;
   padding: 1em 5em;
-  background-color: var(--background-color);
+  background-color: var(--button-color);
   font-family: var(--main-font); 
 }
 
-.navigation_bar li a:hover, .dropdown:hover .dropbtn {
-  background-color: white;  
+.navigation_bar li a:hover{
+  background-color: var(--background-color);  
 }
 
 
 ul li {
   display: none;
-  background-color: #f9f9f9;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  margin-right: 2em;
+  background-color: var(--offwhite);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,.3);
 }
 
 ul li a {
@@ -81,21 +80,12 @@ ul li a {
   display: block;
 }
 
-ul li a a:hover {
-  background-color: #ddd;
-  align-self:flex-end;
-}
-
-ul li a:hover {
-  background-color: rgb(198, 198, 198);
-}
-
 .navigation_bar:hover ul li {
   display: block;
 }
 
 .navigation_bar:hover ul {
-  position:absolute;
+  position:fixed;
 }
 
 footer {

@@ -38,7 +38,7 @@
   justify-self:flex-end;
   height: 6vw;
   width: 15vw;
-  background-color: #0D99FF; 
+  background-color: var(--button-color); 
   border-radius: 10px;
   border: none;
   transition: all 100ms ease-out;
