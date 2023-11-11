@@ -8,35 +8,34 @@
   display: flex;
   background-color: var(--offwhite);
   border-radius: 3px;
-  height: 25em;
+  height: 30vw ;
+  justify-content:space-evenly;
+
 }
 
 
 .introinfo {
   display: flex;
   flex-direction: column;
-  font-size:large;
+  font-size:1.2vw;
   align-self:center;
+  margin-left:3em;
   width:100vw;
 }
 
 .introinfo b {
   position:relative;
-  font-size:xx-large ; 
+  font-size:2vw; 
   font-family:europabold;
 }
 
 .introinfo em{
-  position: relative;
-  align-self: center;
+  margin-left:4.5em;
 }
 
 #contact {
-  
-  object-fit: contain;
-  align-self: center;
-  height: 4em;
-  width: 15em;
+  height: 3vw;
+  width: 15vw;
   background-color: #0D99FF; 
   border-radius: 10px;
   border: none;
@@ -47,18 +46,20 @@
 
 #contact:hover, #contact:focus {
   cursor:pointer;
+  background-color: #6fb6e9;
 }
 
 #intro img {
-  position:relative;
+  position:absolute;
+  margin-left:5em;
+  margin-right:5em;
   align-self:center;
-  margin-right:2em;
-  order:-1;
-  height: 40vh;
-  border-radius: 10em;
-  object-fit:contain;
-  margin-left:3em; 
-  
+  justify-self:center;
+  margin-right:6em;
+  height: 30em;
+  width: 20vw;;
+  object-fit:contain;  
+  border-radius:50%;
 }
 
 .aboutme {
@@ -71,6 +72,7 @@ table {
   align-self:center;
   text-align: left;
   margin-right:2em;
+  margin-left: 2em;
 }
 
 
@@ -81,7 +83,8 @@ th, td {
 
 svg {
   display: block; 
-  height: 5vh; 
+  height: 1em;
+  width: 20vw; 
 }
 
 rect {
@@ -97,22 +100,21 @@ rect {
 }
 
 .about_container h2 {
+  color:white;
   margin-top: 3em;
   margin-bottom:1em;
-  font-size: xx-large;
+  font-size: 2.3vw;
   align-self: center;
 }
 .about_container p {
   background-color: var(--offwhite);
   color:rgb(0, 0, 0);
   align-self:center;
-  font-size: large;
+  font-size: 1.4vw;
   line-height: 2;
   padding: 2em;
   margin: 0 2em;
   margin-bottom:5em;
-  
-
 }
 
 

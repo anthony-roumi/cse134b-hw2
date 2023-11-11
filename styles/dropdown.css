@@ -39,6 +39,10 @@ body {
 }
 
 
+ul:last-child li img {
+  height: 2em;
+}
+
 .navigation_bar a {
   font-size: 1em;
   text-align:center;
@@ -54,7 +58,7 @@ body {
   border: none;
   outline: none;
   color: white;
-  padding: 1.7em 3em;
+  padding: 1em 2em;
   background-color: var(--background-color);
   font-family: var(--main-font); 
 }
@@ -76,7 +80,7 @@ ul li a {
   display: block;
 }
 
-a[href="/index.html"] {
+ul li:nth-child(1) {
   margin-top:310%;
 }
 

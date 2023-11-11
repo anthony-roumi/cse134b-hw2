@@ -3,10 +3,10 @@
 
 
 #intro {
-  margin-top: 2em;
+  margin-top: 3em;
   display: flex;
   background-color: var(--offwhite);
-  height: 25em;
+  height: 45vw;
   align-items: center;
   justify-content:space-evenly;
 }
@@ -16,10 +16,8 @@
 .introinfo {
   display: flex;
   flex-direction: column;
-  font-size:medium;
-  
+  font-size:2vw;
   justify-self:center;
-  margin-top: 3em; 
 }
 
 
@@ -29,7 +27,7 @@
 }
 
 .introinfo b {
-  font-size:x-large ; 
+  font-size:4vw; 
   font-family:europabold;
 }
 
@@ -53,12 +51,9 @@
 }
 
 #intro img {
-  height: 40vh;
-  width:40vw;
-  /* border-radius: 10em; */
+  width:35vw;
   object-fit:contain;
-  order:-1;
-  margin-left:3em; 
+  
 }
 
 .aboutme {
@@ -79,20 +74,92 @@ table {
 }
 
 .about_container h2 {
-  margin-top: 3em;
+  color:white;
+  margin-top: 2em;
   margin-bottom:1em;
-  font-size: xx-large;
+  font-size: 4vw;
   align-self: center;
 }
 .about_container p {
   background-color: var(--offwhite);
   color:rgb(0, 0, 0);
   align-self:center;
-  font-size: large;
+  font-size: 2vw;
   line-height: 2;
   padding: 2em;
   margin: 0 2em;
   margin-bottom:5em;
+}
+
+.experience_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience_container h1 {
+  margin-top: 1.2em;
+  margin-bottom:1em;
+  font-size: 4vw;
+  color:white;
+  align-self: center;
+}
+
+.experience_container p {
+  background-color: white;
+  color:rgb(0, 0, 0);
+  align-self:center;
+  font-size: 2vw;
+  padding: 2em;
+  margin: 0 2em;
+  border-top: black solid 1px;
+  border-right: black solid 1px;
+  border-left: black solid 1px;
+  line-height: 2;
+}
+
+.experience_container details {
+  background-color: white;
+  font-size: 2vw;
+  padding: 2em;
+  margin:0 2em;
+  
+  border-right: black solid 1px;
+  border-left: black solid 1px;
+  border-bottom: black solid 1px;
+}
+
+details img {
+  height: 20vw;
+}
+
+details video {
+  height: 21vw;
+}
+
+
+.project_container {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.project_container h1{
+  align-self: center;
+  font-size: 4vw;
+  margin-top: 1.2em;
+  color: white;
+}
+
+
+.project_container p {
+  background-color: white;
+  color:rgb(0, 0, 0);
+  align-self:center;
+  font-size: 2vw;
+  padding: 2em;
+  margin: 0 2em;
+  border: solid black 1px;
+  margin-top: 2em;
 }
 
 

@@ -22,14 +22,15 @@ body {
 .header h1>a {
   margin-left:.5em;
   text-decoration: none;
-  color:black;  
+  color:black;
+  font-size: 2.5vw;  
 }
 
 ul {
   display: flex;
   align-items: center;
   gap: 2em;
-  font-size: large;
+  font-size: 1.3vw;
 }
 
 
@@ -58,6 +59,11 @@ a:has(+img) {
 }
 
 
+ul:last-child li img {
+  height: 2.6vw;
+}
+
+
 footer {
   display:flex;
   flex-direction:column;
@@ -68,33 +74,14 @@ footer {
   margin-top:5em;
 }
 
+
 /* To animate the tabs */
 
-a[href="/index.html"] {
-  transition: all 100ms ease-out;
-}
-a[href="/index.html"]:hover {
-  color:#000000;
-}
-
-a[href="/experience.html"] {
-  transition: all 100ms ease-out;
-}
-a[href="/experience.html"]:hover {
-  color:#000000;
-}
-
-a[href="/projects.html"] {
-  transition: all 100ms ease-out;
-}
-a[href="/projects.html"]:hover {
-  color:#000000;
-}
-
-a[href="/contact_me.html"] {
+ul li a {
   transition: all 100ms ease-out;
 }
 
-a[href="/contact_me.html"]:hover {
-  color:#000000;
+ul li a:hover {
+  color: black;
 }
+

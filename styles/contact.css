@@ -5,7 +5,6 @@ main {
 }
 
 main h1 {
-  /* display: flex; */
   text-align:center;
  
   font-size: xx-large;
@@ -22,6 +21,5 @@ form {
   color:white;
   align-items:center;
   justify-self:center; 
-  /* /* text-align:center; */
 }
 
