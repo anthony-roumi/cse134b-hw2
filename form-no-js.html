@@ -10,7 +10,6 @@
 	<link rel="stylesheet" media="screen and (min-width: 950px)" href="styles/header.css"/>
 	<link rel="stylesheet" media="screen and (max-width: 949px)" href="styles/dropdown.css"/>
 	<link href="styles/contact.css" rel="stylesheet" media="screen"/>
-	<script src="/form.js" ></script>
 
 	<title>Anthony Roumi</title>
 	</head>
@@ -75,26 +74,8 @@
 					<br>
 					<input type="hidden" id="possible_bot" name="possible_bot" value="true">
 					<input type="submit" value="Send" style="width:15em; height:3em;" >
-				</form>	
-				<form>
-					<label for="mail">
-						I would like you to provide me with an email address:
-					</label>
-					<input type="email" id="mail" name="mail" />
-					<button>Submit</button>
 				</form>
-				<script>
-					const email = document.getElementById("mail");
-
-email.addEventListener("input", (event) => {
-  if (email.validity.typeMismatch) {
-    email.setCustomValidity("I am expecting an email address!");
-  } else {
-    email.setCustomValidity("");
-  }
-});
-				</script>	
-				
+			
 			</div>
 			</main>
 			<footer>
