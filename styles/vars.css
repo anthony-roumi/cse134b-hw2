@@ -6,6 +6,22 @@
   --offwhite : #FAF9F6;
 }
 
+[data-theme="light"] {
+  --background-color: #358ccb;
+  --button-color: #1f4f7a;
+  --offwhite: #FAF9F6;
+  --textcolor: black;
+  --formcolor: rgb(232, 232, 232);
+}
+
+[data-theme="dark"] {
+  --background-color: #1f4f7a;
+  --button-color: #358ccb;
+  --offwhite: #1a1a1a;
+  --textcolor: white;
+  --formcolor: rgb(22, 22, 22);
+}
+
 @font-face {
   font-family: europa;
   src:url(/fonts/europanuova-cufonfonts/EuropaNuovaRegular.ttf);

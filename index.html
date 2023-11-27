@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
 	<meta charset="utf-8" />
@@ -19,15 +19,30 @@
 	<script>console.log("Hire me!");</script>
 
 	<title>Anthony Roumi</title>
-	<template>hidden</template>
+	<script type="text/javascript" src="/form.js"></script>
 	</head>
 	<body>			
 		<header class="header">
 			<h1>
 				<a href="/index.html"> Anthony Roumi</a>
 			</h1>
+			
+			<label class="toggle">
+				<span class="onoff"></span>
+				<input type="checkbox" id="checkbox">
+				<span class="slider"></span>
+			</label>
+			<noscript>
+				<style>
+					.toggle {
+						display:none;
+					}
+				</style>
+			</noscript>
 				<nav class="navigation_bar">
+					
 					<button class="dropbtn">Menu</button>
+					
 					<ul class="dropdown">
 							<li class="current">
 								<a href="/index.html">About Me</a>
@@ -42,7 +57,7 @@
 								<a href="/contact_me.html">Contact</a>
 							</li>
 							<li>
-								<a href="mailto:aroumi@ucsd.edu"><img style="margin-top:.3em" src="/images/contacticons/mailicon.png" alt="mail icon"></a>
+								<a href="mailto:aroumi@ucsd.edu"><img style="margin-top:.3em" src="/images/contacticons/mailicon.png" style="color:white;" alt="mail icon"></a>
 							</li>
 							<li>
 								<a href="https://www.linkedin.com/in/anthony-roumi-6b647123b/"><img style="margin-top:.2em;" src="/images/contacticons/linkedinicon.png" alt="linkedin icon"></a>

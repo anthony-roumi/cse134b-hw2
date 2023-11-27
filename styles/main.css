@@ -21,6 +21,7 @@
   align-self:center;
   margin-left:3em;
   width:100vw;
+  color: var(--textcolor);
 }
 
 .introinfo b {
@@ -40,7 +41,7 @@
   border-radius: 10px;
   border: none;
   transition: all 100ms ease-out;
-  color: white;
+  color: var(--offwhite);
   font-weight: bold;
 }
 
@@ -73,6 +74,7 @@ table {
   text-align: left;
   margin-right:2em;
   margin-left: 2em;
+  color:var(--textcolor);
 }
 
 th, td {
@@ -88,7 +90,7 @@ svg {
 rect {
   width: 100%;
   height: 100%; 
-  fill: #1f4f7a;
+  fill: var(--button-color);
 }
 
 
@@ -98,17 +100,18 @@ rect {
 }
 
 .about_container h2 {
-  color:white;
+  color: white;
   margin-top: 3em;
   margin-bottom:1em;
   font-size: 2.3vw;
   align-self: center;
 }
+
 .about_container p {
   background-color: var(--offwhite);
-  color:rgb(0, 0, 0);
+  color:var(--textcolor);
   align-self:center;
-  font-size: 1.4vw;
+  font-size: 1.2vw;
   line-height: 2;
   padding: 2em;
   margin: 0 2em;

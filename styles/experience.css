@@ -13,27 +13,28 @@
 }
 
 .experience_container p {
-  background-color: white;
-  color:rgb(0, 0, 0);
+  background-color: var(--offwhite);
+  color:var(--textcolor);
   align-self:center;
-  font-size: 1.4vw;
+  font-size: 1.2vw;
   padding: 2em;
   margin: 0 2em;
-  border-top: black solid 1px;
-  border-right: black solid 1px;
-  border-left: black solid 1px;
+  border-top: var(--textcolor) solid 1px;
+  border-right: var(--textcolor) solid 1px;
+  border-left: var(--textcolor) solid 1px;
   line-height: 2;
 }
 
 .experience_container details {
-  background-color: white;
-  font-size: 1.4vw;
+  background-color: var(--offwhite);
+  font-size: 1.2vw;
   padding: 2em;
   margin:0 2em;
+  color: var(--textcolor);
   
-  border-right: black solid 1px;
-  border-left: black solid 1px;
-  border-bottom: black solid 1px;
+  border-right: var(--textcolor) solid 1px;
+  border-left: var(--textcolor) solid 1px;
+  border-bottom: var(--textcolor) solid 1px;
 }
 
 details img {

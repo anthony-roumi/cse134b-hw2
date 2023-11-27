@@ -15,7 +15,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items:center;
-  border-bottom:solid black 0.75px;
+  border-bottom:solid var(--textcolor) 0.75px;
   height: 4em;
 }
 
@@ -24,7 +24,7 @@ body {
   justify-self:center;
   margin-left:.5em;
   text-decoration: none;
-  color:black;  
+  color:var(--textcolor);  
 }
 
 
@@ -57,7 +57,7 @@ ul:last-child li img {
 .dropbtn {
   border: none;
   outline: none;
-  color: white;
+  color: var(--offwhite);
   padding: 1em 5em;
   background-color: var(--button-color);
   font-family: var(--main-font); 
@@ -75,7 +75,7 @@ ul li {
 }
 
 ul li a {
-  color: black;
+  color: var(--textcolor);
   text-decoration: none;
   display: block;
 }
@@ -90,10 +90,56 @@ ul li a {
 
 footer {
   display:flex;
+  color: var(--textcolor);
   flex-direction:column;
   gap:2em;
   align-items:center;
   background-color: var(--offwhite);
   padding:2em;
   margin-top:5em;
+}
+
+.toggle {
+  position: relative;
+}
+
+.toggle input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+.slider {
+  /* position: relative; */
+  display: block;
+  cursor: pointer;
+  background-color: var(--button-color);
+  transition: 0.3s;
+  width: 4em;
+  height: 1.5em;
+  border-radius: 25px;
+}
+
+
+.slider:before {
+  content:'';
+  position: absolute;
+  height: 1.25em;
+  width: 1.25em;
+  background-color: white;
+  transition: .3s;
+  border-radius: 100px;
+  top: .13em;
+  left: .15em;
+}
+
+input:checked + .slider:before {
+  transform: translateX(2.5em);
+}
+
+input:checked + .slider {
+  background-color: black;
+  box-shadow: 0 0 12px white;
 }

@@ -13,13 +13,13 @@
 }
 
 .project_container p {
-  background-color: white;
-  color:rgb(0, 0, 0);
+  background-color: var(--offwhite);
+  color:var(--textcolor);
   align-self:center;
-  font-size: 1.4vw;
+  font-size: 1.2vw;
   padding: 2em;
   margin: 0 2em;
-  border: solid black 1px;
+  border: solid var(--textcolor) 1px;
   margin-top: 1em;
 }
 
