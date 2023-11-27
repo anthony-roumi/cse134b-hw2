@@ -1,9 +1,6 @@
 :root {
-  --background-color: #358ccb;
-  --button-color: #1f4f7a;
   --main-font: europa;
   --main-fontBold : europaBold;
-  --offwhite : #FAF9F6;
 }
 
 [data-theme="light"] {

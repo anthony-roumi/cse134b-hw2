@@ -55,6 +55,7 @@ ul li,a {
   color:rgb(152, 152, 152);
 }
 
+
 a:has(+img) {
   display:flex;
 }
@@ -103,7 +104,7 @@ ul li a:hover {
   /* position: relative; */
   display: block;
   cursor: pointer;
-  background-color: var(--button-color);
+  background-color: var(--background-color);
   transition: 0.3s;
   width: 4em;
   height: 1.5em;
@@ -128,6 +129,6 @@ input:checked + .slider:before {
 }
 
 input:checked + .slider {
-  background-color: black;
-  box-shadow: 0 0 12px white;
+  background-color: #1f4f7a;
+ 
 }
