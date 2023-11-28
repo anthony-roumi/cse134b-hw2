@@ -62,6 +62,11 @@ input {
 
 }
 
+
+input:valid:nth-last-child(n+2) {
+  box-shadow: 0 0 5px 1px green;
+}
+
 form input:last-child {
   background-color: var(--offwhite);
   transition: all ease-out 10ms;
@@ -69,5 +74,19 @@ form input:last-child {
 
 form input:last-child:hover {
   background-color: lightgrey;
+  cursor: pointer;
+}
+
+.errormsg {
+  animation: flash 0.75s;
+}
+
+@keyframes flash {
+  0%, 100% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #ff2e2e; 
+  }
 }
 
