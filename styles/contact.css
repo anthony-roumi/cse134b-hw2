@@ -77,7 +77,7 @@ form input:last-child:hover {
   cursor: pointer;
 }
 
-.errormsg {
+.error {
   animation: flash 0.75s;
 }
 

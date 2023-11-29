@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
   const checkbox = document.getElementById('checkbox');
   const htmlTag = document.querySelector('html');
 
@@ -24,7 +24,7 @@ const email = document.getElementById("email");
 email.addEventListener("input", function () {
   if (email.validity.typeMismatch) {
     email.setCustomValidity("Enter a valid email address.");
-    
+    form_errors.push("Invalid email address");
   } else {
     email.setCustomValidity("");
   }  
@@ -48,9 +48,6 @@ comments.addEventListener("input", function () {
   }  
 });
 
-
-//should better optimize eventlistener so it's not called twice.
-// should be able to mix first and last name
 const firstname = document.getElementById("firstname");
 let nameMessage = document.querySelector("span.error-message"); 
 firstname.addEventListener("keydown", function (event) {
@@ -58,23 +55,20 @@ firstname.addEventListener("keydown", function (event) {
     const pattern = /^[a-zA-Z]+$/u;
     if (!pattern.test(inputValue)) {
       event.preventDefault();
-      firstname.classList.add("errormsg");
+      firstname.classList.add("error");
       nameMessage.style.display = "block";
       nameMessage.style.color = "red";
       nameMessage.textContent = 'Illegal character entered!';
       setTimeout(function () {
         nameMessage.style.display = "none";
-        firstname.classList.remove("errormsg");
+        firstname.classList.remove("error");
       }, 750)
-      form_errors.push("Illegal character entered (first name)");
-      console.log(form_errors);
-      
+      form_errors.push("Illegal character entered (first name)");      
     } 
     else {
       firstname.setCustomValidity("");
       nameMessage.textContent = "";
       nameMessage.style.display = "none";
-      firstname.classList.remove("errormsg");
     } 
   });
 
@@ -85,22 +79,20 @@ firstname.addEventListener("keydown", function (event) {
       const pattern = /^[a-zA-Z]+$/u;
       if (!pattern.test(inputValue)) {
         event.preventDefault();
-        lastname.classList.add("errormsg");
+        lastname.classList.add("error");
         nameMessage.style.display = "block";
         nameMessage.style.color = "red";
         nameMessage.textContent = 'Illegal character entered!';
         setTimeout(function () {
           nameMessage.style.display = "none";
-          lastname.classList.remove("errormsg");
+          lastname.classList.remove("error");
         }, 750)
         form_errors.push("Illegal character entered (last name)");
-        console.log(form_errors);
       } 
       else {
         lastname.setCustomValidity("");
         nameMessage.textContent = "";
         nameMessage.style.display = "none";
-        lastname.classList.remove("errormsg");
       } 
     });
  
@@ -109,39 +101,34 @@ firstname.addEventListener("keydown", function (event) {
         const pattern = /^[a-zA-Z|0-9|+|\-|_|~|@|.]+$/u;
         if (!pattern.test(inputValue)) {
           event.preventDefault();
-          email.classList.add("errormsg");
+          email.classList.add("error");
           nameMessage.style.display = "block";
           nameMessage.style.color = "red";
           nameMessage.textContent = 'Illegal character entered!';
           setTimeout(function () {
             nameMessage.style.display = "none";
-            email.classList.remove("errormsg");
+            email.classList.remove("error");
           }, 750)
           form_errors.push("Illegal character entered (email)");
-          console.log(form_errors);
         } 
         else {
           email.setCustomValidity("");
           nameMessage.textContent = "";
           nameMessage.style.display = "none";
-          email.classList.remove("errormsg");
         } 
       });
 
-      // const form = document.querySelector("form");
-      // form.addEventListener("submit", function (event) {    
-      //   if (!form.checkValidity()) {
-      //     form_errors.push("Form has validation errors");
-    
-      //     console.log(form_errors);
-      //   } else {
-      //     form_errors = [];
-      //     // Form is valid, you can proceed with the form submission or perform additional actions
-      //     console.log("Form submitted successfully");
-      //   }
-      // });
-
-      //just figure out how to send to server
-      let errorform = JSON.stringify(form_errors);
-      console.log(errorform);
-     
+      const submitButton = document.getElementById("submit");
+      const form = document.querySelector("form");
+      submitButton.onclick = function() {
+       if(!form.checkValidity()) {
+        form_errors.push("Form incomplete");
+       } else {
+        let errorsJson = JSON.stringify(form_errors);
+        let errorsInput = document.createElement('input');
+        errorsInput.name = 'form-errors';
+        errorsInput.value = errorsJson;
+        form.appendChild(errorsInput);
+        form_errors = [];
+       }
+      }
