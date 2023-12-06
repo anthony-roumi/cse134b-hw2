@@ -1,0 +1,15 @@
+main h1 {
+  text-align:center;
+  margin-top:2em;
+  color: var(--textcolor);
+  margin-bottom:1em;
+}
+rating-widget {
+  text-align: center;
+  color: var(--textcolor);
+}
+
+label {
+  color: var(--textcolor);
+}
+
