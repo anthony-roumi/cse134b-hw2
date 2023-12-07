@@ -119,18 +119,6 @@
       let fourStar = this.shadowRoot.getElementById('fourStar');
       let fiveStar = this.shadowRoot.getElementById('fiveStar');
       let ratingMsg = this.shadowRoot.getElementById('ratingMsg');
-    
-      // const xhr = new XMLHttpRequest();
-      // xhr.open("POST", "https://httpbin.org/post");
-      // xhr.setRequestHeader("X-Sent-By", "Javascript");
-      // xhr.onload = () => {
-      //   if (xhr.readyState == 4 && xhr.status == 200) {
-      //     console.log(JSON.parse(xhr.responseText));
-      //   } else {
-      //     console.log(`Error: ${xhr.status}`);
-      //   }
-      // };
-
       function postData(rating) {
         const xhr = new XMLHttpRequest();
       xhr.open("POST", "https://httpbin.org/post");

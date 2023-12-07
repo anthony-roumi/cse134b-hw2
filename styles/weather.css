@@ -1,0 +1,14 @@
+main h1 {
+  text-align:center;
+  margin-top:2em;
+  color: var(--textcolor);
+  margin-bottom:1em;
+}
+
+weather-widget {
+      display: flex;
+      justify-content:center;
+      color: var(--textcolor);
+      font-size: medium;
+    }
+
