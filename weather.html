@@ -81,13 +81,13 @@
               }
 
               fetchIcon() {
-                fetch('')
+                fetch('http://api.weatherapi.com/v1/current.json?key=45c31b0300a4450a816234651230612&q=92093&aqi=no')
                 .then(response => response.json())
                 .then(data => {
                   this.displayIcon(data);
                 })
                 .catch(() => {
-                  this.displayIcon("");
+                  this.displayIcon(null);
                 });
               }
           
@@ -115,9 +115,15 @@
               }
 
               displayIcon(icon) {
-                const iconElement = this.shadowRoot.getElementById('icon');
-                let iconImg = icon.current.condition.icon;
+								const iconElement = this.shadowRoot.getElementById('icon');
+								if (icon === null) {
+									iconElement.src = '/images/sad.png'
+								} else {
+									let iconImg = icon.current.condition.icon;
                 iconElement.src = iconImg;
+								}
+               
+                
               }
           
               disconnectedCallback() {
