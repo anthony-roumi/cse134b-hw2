@@ -105,12 +105,20 @@
               }
           
               displayFact(weather) {
-                const weatherElement = this.shadowRoot.getElementById('weather');
+                let weatherElement = this.shadowRoot.getElementById('weather');
+								let tempElement = this.shadowRoot.getElementById('temperature'); 
                
                 let day = weather.properties.periods[0];
-                let dayForecast = day.detailedForecast;
+                let dayForecast = day.shortForecast;
+								let dayTemp = day.temperature;
+								let dayUnit = day.temperatureUnit;
+								dayTemp +=  '\u00B0' + dayUnit + ' ' + '|' + ' ';
+								dayTemp += dayForecast;
+								
+								
+								weatherElement.textContent = dayTemp;
                 
-                weatherElement.textContent = dayForecast;
+                // weatherElement.textContent = dayForecast;
                 weatherElement.style.opacity = 1;
               }
 
@@ -133,9 +141,7 @@
             }
           
             customElements.define('weather-widget', weatherWidget);
-          </script>
-          
-          
+          </script>      
         </main>
 			<script src="/dark.js"></script>
 		</body>

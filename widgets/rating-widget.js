@@ -3,7 +3,7 @@ class ratingWidget extends HTMLElement {
     super();
     this.attachShadow({mode: 'open'});
     const template = document.getElementById("stars");
-    this.shadowRoot.innerHTML = template.innerHTML;
+    this.shadowRoot.innerHTML = '<style>span {display: flex;justify-content: center;margin-top: 2em;}ol {color: grey;display: flex;list-style-type: none;cursor: pointer;justify-content: center;align-content: center;margin-left: 1.2em;font-size: xx-large;gap: .2em;transform: scaleX(-1);}ol li {transition: all 80ms ease-out;}ol li:hover,ol li:hover ~ li {color: gold !important;}</style><ol><li id="fiveStar">&#9733;</li><li id="fourStar">&#9733;</li><li id="threeStar">&#9733;</li><li id="twoStar">&#9733;</li> <li id="oneStar">&#9733;</li>  </ol><span id="ratingMsg"></span>';
     let oneStar = this.shadowRoot.getElementById('oneStar');
     let twoStar = this.shadowRoot.getElementById('twoStar');
     let threeStar = this.shadowRoot.getElementById('threeStar');
