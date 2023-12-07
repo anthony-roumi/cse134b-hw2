@@ -64,15 +64,16 @@
 				</header>
         <main>
           <h1>Weather Widget</h1>
-          <weather-widget>Current Weather Conditions Unavailable</weather-widget>
+          <weather-widget>Current Weather Conditions Unavailable :(</weather-widget>
           
-         
+				 
           <script type="module">
             class weatherWidget extends HTMLElement {
               constructor() {
                 super();
                 this.attachShadow({ mode: 'open' });
-                this.shadowRoot.innerHTML = `<img id="icon" src='' alt="weather icon"><p style="width:25vw;" style="font-size: 1em;" id="weather"></p>`;
+                this.shadowRoot.innerHTML = `<img style="height:4em;"id="icon" src='' alt="weather icon">&nbsp&nbsp<details style="align-self:center;"><summary id="weather"></summary><ul><li id="windspeeds"></li><li id="humidity"></li></ul></details>`;
+								
           
                 this.fetchWeather();
                 this.fetchIcon();
@@ -106,7 +107,8 @@
           
               displayFact(weather) {
                 let weatherElement = this.shadowRoot.getElementById('weather');
-								let tempElement = this.shadowRoot.getElementById('temperature'); 
+								let windElement = this.shadowRoot.getElementById('windspeeds'); 
+								let humidElement = this.shadowRoot.getElementById('humidity'); 
                
                 let day = weather.properties.periods[0];
                 let dayForecast = day.shortForecast;
@@ -114,11 +116,13 @@
 								let dayUnit = day.temperatureUnit;
 								dayTemp +=  '\u00B0' + dayUnit + ' ' + '|' + ' ';
 								dayTemp += dayForecast;
-								
-								
+								let windSpeed = 'Windspeed: ' + day.windSpeed;
+								windSpeed += ' ' + day.windDirection;
+								let humidity = 'Humidity: ' + day.relativeHumidity.value;
+								humidity += '%' ;
 								weatherElement.textContent = dayTemp;
-                
-                // weatherElement.textContent = dayForecast;
+								windElement.textContent = windSpeed;
+								humidElement.textContent = humidity;                
                 weatherElement.style.opacity = 1;
               }
 
@@ -139,9 +143,12 @@
                 clearInterval(this.interval);
               }
             }
+						
+						
           
             customElements.define('weather-widget', weatherWidget);
-          </script>      
+          </script>
+					      
         </main>
 			<script src="/dark.js"></script>
 		</body>
